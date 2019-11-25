@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="author" content="Kelly's Trucking" />
+    <meta name="description" content="Kelly's Trucking - Thayer, IA" />
+    <meta name="keywords" content="trucking, business, corn, grain, feed, hay, soybean, truck, kelly, kelly's, kellys, thayer, creston, afton, murray, osceola, iowa, ia, farm, farming, hopeville, bin, silo, LLC, lenox, bedford, clearfield, winterset, lorimer, grand, river, grandriver, orient, greenfield, corning, brooks, harvest, haul, hauling, vac, vaccing, work, bin, cleanup, market, marketing, markets" />
+    <title>Kelly's Trucking LLC</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+        }
+
+        legend {
+            border-bottom: 1px dotted purple;
+	        font-size: 125%;
+	        padding-bottom: 15px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        fieldset {
+            border: hidden;
+            margin: 20px;
+        }
+
+        fieldset div {
+            margin: 5px 0;
+        }
+
+        input, select, textarea {
+            font-size: 1.1em;
+            padding: 2px 5px 4px;
+            margin-top: 10px;
+
+        }
+
+        label {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            padding-left: 25px;
+        }
+
+        p {
+            text-indent: 1%;
+            font-size: 1.2em;
+            font-weight: 700;
+            padding-left: 1%;
+            padding-top: 4%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+
+        <header name="top">
+            <img class="logobg" src="images/logo.png" alt="kellystrucking_logo" />
+        </header>
+        <nav>
+            <a href="index.htm">Home</a>
+            <a href="contact.htm">Contact</a>
+        </nav>
+
+        <main>
+            <legend>Send me an email here!</legend>
+            <form id="contactform" method="post" action="contact_form_response.php">
+                <fieldset>
+                    <div>
+                        <label for="firstname">First Name: </label>
+                        <input id="firstname" name="firstname" type="text">
+                    </div>
+
+                    <div>
+                        <label for="lastname">Last Name: </label>
+                        <input id="lastname" name="lastname" type="text">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address: </label>
+                        <input id="email" name="email" type="text">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number: </label>
+                        <input id="phone" name="phone" type="text">
+                    </div>
+
+                    <p>What needs hauled?</p>
+
+                    <div>
+                        <input id="corn" name="work" type="radio">
+                        <label>Corn</label>
+
+                    </div>
+
+                    <div>
+                        <input id="soybean" name="work" type="radio">
+                        <label>Soybean</label>
+                    </div>
+
+                    <div>
+                        <input id="other" name="work" type="radio">
+                        <label>Other</label>
+                        <input id="other" name="other" type="text">
+                    </div>
+
+                    <div>
+                        <input id="vac" name="vac" type="checkbox">
+                        <label for="vac">VAC</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <p>Message:</p>
+                    <div>
+                        <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <img class="logosm" src="images/logo.png" alt="kellystrucking_logo" width=" 150" height="100" />
+            <p class="copyright">&copy;Copyright 2019<br /><a href="about.htm">Kelly's Trucking LLC</a></p>
+            <a class="top" href="#top">Go to Top</a>
+        </footer>
+    </div>
+</body>
+</html>
